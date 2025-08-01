@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/img/screenshot.png" width="535">
+  <img src="/img/demo.png" width="535">
   <h3 align="center">HackMD Box</h3>
   <p align="center">📝 Update a pinned gist to show your latest HackMD notes.<p>
 </p>
