@@ -43,7 +43,7 @@ def update_gists(content):
     gist_contest = "\n".join([truncate_string(item[0]) for item in content])
     md_contest = "\n\n".join([f"[{item[0]}]({item[1]})" for item in content])
     data = {
-        "description": "My Latest Notes on HackMD ✏️",
+        "description": "My Latest HackMD Notes ✏️",
         "files": {
             "hackmd_box": {"content": gist_contest},
             "hackmd_box.md": {"content": md_contest},

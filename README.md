@@ -1,7 +1,7 @@
 <p align="center">
   <img src="/img/screenshot.png" width="535">
   <h3 align="center">HackMD Box</h3>
-  <p align="center">📝 Update a pinned gist to show your latest notes on HackMD.<p>
+  <p align="center">📝 Update a pinned gist to show your latest HackMD notes.<p>
 </p>
 
 > This project is inspired by [medium-stat-box](https://github.com/kylemocode/medium-stat-box) and [youtube-box](https://github.com/SinaKhalili/youtube-box)
