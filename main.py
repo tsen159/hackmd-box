@@ -6,7 +6,7 @@ hackmd_api_key = os.environ["HACKMD_API_KEY"]
 github_token = os.environ["GH_TOKEN"]
 gist_id = os.environ["GIST_ID"]
 gist_url = f"https://api.github.com/gists/{gist_id}"
-NUM_NOTES = 10
+NUM_NOTES = 6
 MODE = "lastchangeAt"  # changed to "createdAt" to sort by creation date
 MAX_WIDTH = 48
 
@@ -47,7 +47,7 @@ def update_gists(content):
     gist_contest = "\n".join([truncate_string(item[0]) for item in content])
     md_contest = "\n\n".join([f"[{item[0]}]({item[1]})" for item in content])
     data = {
-        "description": "My Latest HackMD Notes",
+        "description": "My Latest Notes on HackMD",
         "files": {
             "hackmd_box": {"content": gist_contest},
             "hackmd_box.md": {"content": md_contest},
