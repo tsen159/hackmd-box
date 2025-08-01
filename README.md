@@ -5,10 +5,13 @@
 </p>
 
 > This project is inspired by [medium-stat-box](https://github.com/kylemocode/medium-stat-box) and [youtube-box](https://github.com/SinaKhalili/youtube-box)
+
 > For more pinned-gist projects like this one, check out: https://github.com/matchai/awesome-pinned-gists
 
 ## Overview
-This project dymamically updates a pinned gist to show your latest HackMD notes publicly published. The gist includes a list of the notes' titles, with a separate Markdown file that provides clickable links to each article.
+This project dymamically updates a pinned gist to show your latest HackMD notes publicly published. 
+
+The gist includes a list of the notes' titles, with a separate Markdown file that provides clickable links to each article.
 
 ## Setup
 ### Prep Work
@@ -22,5 +25,5 @@ This project dymamically updates a pinned gist to show your latest HackMD notes 
     - GH_TOKEN: The GitHub access token generated above.
     - HACKMD_API_KEY: The HackMD API token generated above.
     - GIST_ID: The ID portion of your gist url, ex: `https://gist.github.com/<github_username>/`**`6d5f84419863089a167387da62dd7081`**.
-3. [Pin the gist](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile)
+3. [Pin your gist](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile)
 4. The github aciton cron job will run once a week (every Sunday). Push the repo can also trigger the action.
