@@ -7,12 +7,14 @@ github_token = os.environ["GH_TOKEN"]
 gist_id = os.environ["GIST_ID"]
 gist_url = f"https://api.github.com/gists/{gist_id}"
 NUM_NOTES = 6
-MODE = "lastchangeAt"  # changed to "createdAt" to sort by creation date
+MODE = "lastchangeAt"  # change to "createdAt" to sort by creation date
 MAX_WIDTH = 48
 
 
 def truncate_string(s, max_width=MAX_WIDTH):
-    """Truncate a string to a maximum length, considering the width of characters."""
+    """
+    Truncate a string to a maximum length, considering the width of characters.
+    """
     if wcwidth.wcswidth(s) <= max_width:
         return s
     truncated = s[: max_width - 3] + "..."
@@ -36,7 +38,7 @@ def get_hackmd_notes():
         (note["title"], note["publishLink"]) for note in notes if note["publishedAt"]
     ]
 
-    return data[:NUM_NOTES]  # Limit to the last NUM_NOTES notes
+    return data[:NUM_NOTES]  # limit to the last NUM_NOTES notes
 
 
 def update_gists(content):

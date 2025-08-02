@@ -12,7 +12,7 @@
 This project dymamically updates a pinned gist to show your latest HackMD notes publicly published. 
 
 The gist includes a list of the notes' titles, with a separate Markdown file that provides clickable links to each article.
-
+See an example [here](https://gist.github.com/tsen159/10bf4ec688fbae7bc0879bbfb1d57fd7).
 ## Setup
 ### Prep Work
 1. Create a new public GitHub Gist (https://gist.github.com/)
